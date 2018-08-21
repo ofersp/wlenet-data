@@ -1,0 +1,22 @@
+{
+"rgc_path": "~/datasets/lensing/cosmos/COSMOS_25.2_training_sample/real_galaxy_catalog_25.2.fits",
+
+"valid_index_path": "~/datasets/lensing/calibration/cosmos_valid_indices.npy",
+"size_rescale": 0.5416666666666667,
+"pixel_scale": 0.065,
+"gaussian_psf_fwhm": 0.12,
+"noise_whiten": 0,
+"noise_whiten_can_fail": 0,
+"noise_std": 0.0,
+"g_min": -0.2,
+"g_max": 0.2,
+"stamp_sz": 32,
+"stamp_full_sz": 64,
+"shift_range": 7,
+"mu_range": 0.15,
+"mirroring": 1,
+"preload": 1,
+"train_fraction": 0.75,
+"mag_auto_min": 19.5,
+"mag_auto_max": 21.5
+}

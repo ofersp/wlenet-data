@@ -1,0 +1,5 @@
+{
+"num_test_processes": 1,
+"num_train_processes": 10,
+"num_samples_per_process": 25000
+}
