@@ -7,7 +7,7 @@
 __pycache__/
 simulation/clash_003_test
 simulation/clash_004_train
-clusters/clash/*
+clusters/clash
 cosmos/COSMOS_23.5_training_sample
 cosmos/COSMOS_25.2_training_sample
 cache/clash_fields_survey.pkl
