@@ -1,7 +1,7 @@
 {
-"rgc_path": "~/datasets/lensing/cosmos/COSMOS_23.5_training_sample/real_galaxy_catalog_23.5.fits",
+"rgc_path": "~/datasets/wlenet/cosmos/COSMOS_23.5_training_sample/real_galaxy_catalog_23.5.fits",
 
-"valid_index_path": "~/datasets/lensing/calibration/cosmos_valid_indices_235.npy",
+"valid_index_path": "~/datasets/wlenet/calibration/cosmos_valid_indices_235.npy",
 "size_rescale": 0.5416666666666667,
 "pixel_scale": 0.065,
 "gaussian_psf_fwhm": 0.12,
