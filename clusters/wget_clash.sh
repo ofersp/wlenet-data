@@ -3,7 +3,7 @@
 set basedir = `pwd`/clash
 
 foreach cluster (`cat clash_cluster_names.txt`)
-    set clusterdir = ${base_dir}/${cluster}
+    set clusterdir = ${basedir}/${cluster}
 
     mkdir -p ${clusterdir}/data/hst/scale_65mas
     mkdir -p ${clusterdir}/catalogs/hst
