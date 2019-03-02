@@ -1,6 +1,6 @@
 #!/bin/tcsh
 
-cp ~/datasets/lensing/clusters/clash/wl_catalog_and_maps_from_julian/CLASH_ACS_WL_catalogues.zip ./ #wget http://..../CLASH_ACS_WL_catalogues.zip
+wget http://www.phys.huji.ac.il/~springer/wlenet/CLASH_ACS_WL_catalogues.zip
 unzip CLASH_ACS_WL_catalogues.zip -d /tmp/
 rm CLASH_ACS_WL_catalogues.zip
 
