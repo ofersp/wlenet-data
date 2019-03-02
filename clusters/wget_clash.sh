@@ -1,6 +1,6 @@
 #!/bin/tcsh
 
-set base_dir = `pwd`/clash
+set basedir = `pwd`/clash
 
 foreach cluster (`cat clash_cluster_names.txt`)
     set clusterdir = ${base_dir}/${cluster}
