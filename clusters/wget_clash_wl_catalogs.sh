@@ -2,7 +2,7 @@
 
 #wget http://www.phys.huji.ac.il/~springer/wlenet/CLASH_ACS_WL_catalogues.zip
 rm -f /tmp/wl_cats
-mkdir /tmp/wl_cats/wl_cats
+mkdir /tmp/wl_cats
 unzip CLASH_ACS_WL_catalogues.zip -d /tmp/wl_cats/wl_cats
 rm CLASH_ACS_WL_catalogues.zip
 
