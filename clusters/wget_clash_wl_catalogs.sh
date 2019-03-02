@@ -3,7 +3,7 @@
 #wget http://www.phys.huji.ac.il/~springer/wlenet/CLASH_ACS_WL_catalogues.zip
 rm -f /tmp/wl_cats
 mkdir /tmp/wl_cats
-unzip CLASH_ACS_WL_catalogues.zip -d /tmp/wl_cats/wl_cats
+unzip CLASH_ACS_WL_catalogues.zip -d /tmp/wl_cats
 rm CLASH_ACS_WL_catalogues.zip
 
 cp /tmp/wl_cats/A1423_ACS_WL_7filters_10col_071013.cat  clash/a1423/catalogs/wl/
