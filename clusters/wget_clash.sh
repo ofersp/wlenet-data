@@ -2,7 +2,7 @@
 
 set BASE_DIR = `pwd`/clash
 
-for CLUSTER in (`cat clash_cluster_names.txt`); do
+for CLUSTER in `cat clash_cluster_names.txt`; do
     set CLUSTER_DIR = ${BASE_DIR}/${CLUSTER}
 
     mkdir -p ${CLUSTER_DIR}/data/hst/scale_65mas
