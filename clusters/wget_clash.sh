@@ -1,29 +1,29 @@
 #!/bin/bash
 
-BASE_DIR=`pwd`/clash
+BASE_DIR="`pwd`/clash"
 
 for CLUSTER in `cat clash_cluster_names.txt`; do
-    CLUSTER_DIR=${BASE_DIR}/${CLUSTER}
+    CLUSTER_DIR="${BASE_DIR}/${CLUSTER}"
     echo ${CLUSTER_DIR}
 
-    mkdir -p ${CLUSTER_DIR}/data/hst/scale_65mas
-    mkdir -p ${CLUSTER_DIR}/catalogs/hst
-    mkdir -p ${CLUSTER_DIR}/catalogs/wl
-    mkdir -p ${CLUSTER_DIR}/catalogs/molino
+    mkdir -p "${CLUSTER_DIR}/data/hst/scale_65mas"
+    mkdir -p "${CLUSTER_DIR}/catalogs/hst"
+    mkdir -p "${CLUSTER_DIR}/catalogs/wl"
+    mkdir -p "${CLUSTER_DIR}/catalogs/molino"
 
-    cd ${CLUSTER_DIR}/catalogs/hst
+    cd "${CLUSTER_DIR}/catalogs/hst"
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/catalogs/hst/hlsp_clash_hst_catalog_readme.txt
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/catalogs/hst/hlsp_clash_hst_${CLUSTER}_zeropoints.txt
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/catalogs/hst/hlsp_clash_hst_ir_${CLUSTER}_cat.txt
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/catalogs/hst/hlsp_clash_hst_acs-ir_${CLUSTER}_cat.txt
 
-    cd ${CLUSTER_DIR}/catalogs/molino
+    cd "${CLUSTER_DIR}/catalogs/molino"
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/catalogs/molino/hlsp_clash_hst_ir_${CLUSTER}_cat-molino.txt
 
-    cd ${CLUSTER_DIR}/data/hst
+    cd "${CLUSTER_DIR}/data/hst"
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/data/hst/hlsp_clash_hst_${CLUSTER}_readme.txt
 
-    cd ${CLUSTER_DIR}/data/hst/scale_65mas
+    cd "${CLUSTER_DIR}/data/hst/scale_65mas"
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/data/hst/scale_65mas/hlsp_clash_hst_acs_${CLUSTER}_f435w_v1_drz.fits
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/data/hst/scale_65mas/hlsp_clash_hst_acs_${CLUSTER}_f435w_v1_wht.fits
     wget -nv https://archive.stsci.edu/missions/hlsp/clash/${CLUSTER}/data/hst/scale_65mas/hlsp_clash_hst_acs_${CLUSTER}_f475w_v1_drz.fits
