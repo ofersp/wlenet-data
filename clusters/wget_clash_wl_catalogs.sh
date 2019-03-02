@@ -1,4 +1,4 @@
-#!/bin/tcsh
+#!/bin/bash
 
 wget http://www.phys.huji.ac.il/~springer/wlenet/CLASH_ACS_WL_catalogues.zip
 unzip CLASH_ACS_WL_catalogues.zip -d /tmp/
